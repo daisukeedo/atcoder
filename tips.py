@@ -19,6 +19,15 @@ for i in a:
 #スペース区切りの数値をlistに入れて合計
 N = sum(list(map(int, input().split())))
 
+#正確な小数点計算はDecimal
+from decimal import Decimal
+import math
+A,B = map(Decimal, input().split())
+
+#小数点以下切り捨て、切り上げ
+math.floor(a)
+math.ceil(a)
+
 #２つの配列のそれぞれの要素の比較
 for ss, tt in zip(S, T):
 
